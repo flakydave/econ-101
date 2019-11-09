@@ -1,0 +1,287 @@
+\documentclass[xcolor={dvipsnames},pdf, hyperref={colorlinks=true, citecolor=ForestGreen, linkcolor=BlueViolet, urlcolor=Magenta}]{beamer}
+\usetheme{Frankfurt}  
+\usecolortheme{whale}
+\usepackage{tikz} 
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+\usepackage{verbatim}               % useful for \begin{comment} and \end{comment}
+\usepackage{eurosym}                % used for euro symbol
+\usepackage{caption} 
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\graphicspath{{Figures/}}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{sgamevar}
+\usepackage{remreset}% tiny package containing just the \@removefromreset command
+\makeatletter
+\@removefromreset{subsection}{section}
+\makeatother
+\setcounter{subsection}{1}
+
+
+\newcommand{\defn}[1]{\textbf{#1}}
+
+
+%Instructor version
+\newcommand{\blank}[0]{}
+\newcommand{\ddp}[1]{{\textcolor{ForestGreen}{#1}}} 
+\newcommand{\dd}[1]{{\underline{\textcolor{ForestGreen}{#1}}}}
+
+%Student version
+%\newcommand{\blank}[0]{\vspace{2em}}
+%\newcommand{\dd}[1]{\underline{\hspace{3cm}}} 
+%\newcommand{\ddp}[1]{}
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\section{What is Money?}
+
+%% preamble
+\title{The Monetary System}
+\author{David A. D\'iaz }
+\institute{UNC Chapel Hill}
+\date{}
+
+\AtBeginSection[] %Section links on slides
+
+\begin{document} 
+	
+	\begin{frame}
+		
+		\titlepage
+		
+	\end{frame}
+
+\begin{frame}{The Monetary System}
+\begin{itemize}
+	\item The existence of money makes trade easier, especially in complex economies. A barter system has trouble allocating scarce resources because trade requires \dd{the double coincidence of wants}.
+	\item \defn{Money:} The set of assets in an economy that people regularly use to buy goods and services from other people.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{The Monetary System}
+\begin{itemize}
+	\item \defn{Medium of exchange:} An item buyers give to sellers when they want to purchase goods and services.
+	
+	\item \defn{Unit of account:} The yardstick used to post prices and record debts. Money measures and records economic value.
+	
+	\item \defn{Store of value:} An item people can use to transfer purchasing power from the present to the future.
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Monetary System}
+\begin{itemize}
+
+	
+	\item Because money is the economy's medium of exchange, it is the most \dd{liquid} asset.
+	\item \defn{Liquidity:} The ease with which an asset can be converted into the economy's medium of exchange.
+	
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Monetary System}
+\begin{itemize}
+	\item The liquidity of an asset must be balanced against the asset's usefulness as a store of value. As we saw already, when prices rise, the value of money \dd{falls}. 
+	
+	\item \defn{Commodity money:} Money that takes the form of a commodity with intrinsic value (e.g., gold, cigarettes)
+	
+	\item \defn{Fiat money:} Money without intrinsic value that is used as such because of government decree. Acceptance of fiat money also depends on expectations and social conventions.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Monetary System}
+\begin{itemize}
+	\item \defn{Currency:} The paper bills and coins in the hands of the public.
+	
+	\item \defn{Demand deposits:} Balances in bank accounts that depositors can access on demand.
+	
+	\item Measures of the money stock:
+	\begin{enumerate}
+		\item M1 money supply: Includes currency, demand deposits, and traveler's checks
+		\item M2 money supply: Includes M1, plus savings accounts, small-denomination times deposits, and money market deposit accounts.
+		\item M3 money supply: Includes M2, plus large-denomination time deposits.
+	\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\section{The Money Supply}
+
+\begin{frame}{The Federal Reserve}
+\begin{itemize}
+	\item \defn{Central bank:} An institution designed to oversee the banking system and regulate the quantity of money in the economy.
+	
+	\item \defn{The Federal Reserve:} The central bank of the United States.
+	
+	\item Main roles of the Fed:
+	\begin{enumerate}
+		\item Regulation: Monitors banks' financial situation and facilitates transactions. Acts as lender of last resort.
+		\item Monetary policy: Setting of the money supply (the quantity of money available in the economy).
+	\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+\begin{itemize}
+	\item \defn{Reserves:} Deposits that banks have received but not loaned out.
+	
+	\item If a system is such that \textit{all} deposits are held as reserves, then it is a \dd{100\%} reserve banking system. 
+	
+	
+	\item T-Account Representation:
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{c|c }        
+			
+			Assets & Liabilities \\
+			\hline
+			\ddp{\$1,000 (reserves)}	&  \ddp{\$1,000 (deposits)}\\
+			
+			& \\
+			
+		\end{tabular}
+	\end{table}
+	
+	\item Because each deposit in the bank reduces \dd{currency} and increases \dd{demand deposits} by the same amount, the money supply is \dd{unchanged} when individuals deposit money. 
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+\begin{itemize}
+	\item Instead of leaving all deposits idle, the bank can lend a portion of it out in order to make a profit by charging interest. 
+	\item \defn{Fractional-Reserve banking:} A system in which banks hold only a fraction of deposits as reserves.
+	
+	\item \defn{Reserve ratio:} The fraction of deposits banks hold as reserves.
+	
+	\item T-Account Representation with a 15\% reserve ratio:
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{ c|c }        
+			
+			Assets & Liabilities \\
+			\hline
+			\ddp{\$150 (reserves)}&  \ddp{\$1,000 (deposits)}\\
+			
+			\ddp{\$850 (loans)}	& \\
+			
+		\end{tabular}
+	\end{table}
+	
+	\item Note what happens to the money supply: Depositors still have demand deposits of \$1,000, but now borrowers hold \dd{\$850} in currency. 
+	
+	
+	\item When banks hold only a fraction of deposits in reserve, the banking system \dd{creates} money.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+\begin{itemize}
+	\item Each time money is deposited and a bank loan is made, more money is created. 
+	\item \defn{Money multiplier:} The amount of money that the banking system generates with each dollar of reserves. MM = 1/RR. As the RR increases, the MM decreases, and so the amount of MS creation decreases.
+	
+	\begin{exmp} 
+		If the reserve ratio is 25\% and the central bank increases the quantity of reserves in the banking system by \$120, what is the maximum amount the money supply could increase?
+	\end{exmp}
+
+	\ddp{\pause $120 \times (1/.25) = 120 \times 4 = 480$.}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Banks and the Money Supply}
+\begin{itemize}
+	\item The Fed has various means to influence the money supply, either directly or indirectly.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+
+	\begin{enumerate}
+		\item Open-market operations: The purchase or sale of US government bonds by the Fed. \begin{itemize}
+			\item Open-market purchases (buying bonds) increase the MS, 
+			\item Open-market sales (selling bonds) decrease the MS. 
+			\item This is the tool most often used
+		\end{itemize}
+	\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+
+	\begin{enumerate}
+		\setcounter{enumi}{1}
+		\item Lending to banks: Banks borrow from the Fed's ``discount window.'' 
+		\begin{itemize}
+			\item Discount rate is the interest rate the Fed charges. 
+			\item A lower discount rate encourages loans, which will increase reserves and thus the MS.
+		\end{itemize}
+
+	\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+
+	\begin{enumerate}
+		\setcounter{enumi}{2}
+		\item Reserve requirements: Regulations on the minimum amount of reserves that banks must hold against deposits. 
+		\begin{itemize}
+			\item Increasing the RRR will decrease the number of loans, which will decrease the MS. This form is rarely used.
+		\end{itemize}
+	\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+\begin{enumerate}
+\setcounter{enumi}{3}
+	\item Paying interest on reserves: By paying a higher interest rates on reserves, the Fed encourages banks to keep more in reserves and thus decreases MS.
+	\item The federal funds rate: The interest rate at which banks make overnight loans to each other.
+	\begin{itemize}
+		\item  The Fed sets a target rate for this and influences it through open-market operations. 
+		\item Buying bonds will increase reserves, which will decrease demand for overnight loans and thus decrease the federal funds rate.
+	\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Banks and the Money Supply}
+\begin{itemize}
+	\item The Fed does not completely control the money supply. Issues:
+\begin{enumerate}
+	\item The Fed does not control the amount of money that \dd{households} actually deposit in banks. 
+	\item The Fed does not control the amount of money that banks actually choose to lend. The reserve requirement is a \dd{minimum} amount that banks have to hold in deposits. Any deposits they hold over this amount are \dd{excess reserves}.
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Readings and Assignments}
+\begin{itemize}
+	\item Today: Mankiw Ch. 29
+	\item Next time: Mankiw Ch. 30
+	\item Problem Set 6, section 1
+
+\end{itemize}
+\end{frame}
+
+\end{document}

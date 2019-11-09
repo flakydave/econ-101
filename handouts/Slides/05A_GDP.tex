@@ -1,0 +1,321 @@
+\documentclass[xcolor={dvipsnames},pdf, hyperref={colorlinks=true, citecolor=ForestGreen, linkcolor=BlueViolet, urlcolor=Magenta}]{beamer}
+\usetheme{Frankfurt}  
+\usecolortheme{whale}
+\usepackage{tikz} 
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+\usepackage{verbatim}               % useful for \begin{comment} and \end{comment}
+\usepackage{eurosym}                % used for euro symbol
+\usepackage{caption} 
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\graphicspath{{Figures/}}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{sgamevar}
+\usepackage{remreset}% tiny package containing just the \@removefromreset command
+\makeatletter
+\@removefromreset{subsection}{section}
+\makeatother
+\setcounter{subsection}{1}
+
+
+\newcommand{\defn}[1]{\textbf{#1}}
+
+
+%Instructor version
+\newcommand{\blank}[0]{}
+\newcommand{\ddp}[1]{{\textcolor{ForestGreen}{#1}}} 
+\newcommand{\dd}[1]{{\underline{\textcolor{ForestGreen}{#1}}}}
+
+%Student version
+%\newcommand{\blank}[0]{\vspace{2em}}
+%\newcommand{\dd}[1]{\underline{\hspace{3cm}}} 
+%\newcommand{\ddp}[1]{}
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\section{Defining GDP}
+
+%% preamble
+\title{Measuring a Nation's Income}
+\author{David A. D\'iaz}
+\institute{UNC Chapel Hill}
+\date{}
+
+\AtBeginSection[] %Section links on slides
+
+\begin{document} 
+	
+	\begin{frame}
+		
+		\titlepage
+		
+	\end{frame}
+
+
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item This section will look at how we measure the total income of a nation -- its gross domestic product. 
+	\item GDP measures both the total \dd{income} of everyone in the economy and the total \dd{expenditure} on the economy's output of goods and services. 
+	\item That is, for the economy as whole, \dd{income} must equal \dd{expenditures}. 
+	\item \defn{GDP:} The market value of all \underline{final} goods and services produced \underline{within} a country during a specific period of time (typically a year).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item GDP adds together many different kinds of products into a single measure of economic activity. To do so, it uses \dd{prices}, which reflect the value of goods.
+	\item Includes all items produced in the economy and sold \textit{legally} in markets.
+	\begin{enumerate}[i.]
+		\item Includes market value of housing services. This includes the rental value of owner-owned housing.
+		\item Excludes items produced and sold illicitly and most items that are produced and consumed within a household. (e.g., prostitution, gambling, tomatoes grown at home)
+	\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item GDP \textbf{only} includes the value of final goods. The value of intermediate goods used to produce final goods is not included. 
+	\item An exception to this rule is when an intermediate good is added to a firm's inventory for use or sale at a later date: Additions to inventory \dd{increase} GDP and when the goods are later used or sold, the reductions in inventory \dd{detract} from GDP.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item Includes goods and services that are \dd{currently} produced. The sale of a used good is \textbf{not} included. 
+	\item Items are included in a nation's GDP only if they are produced \dd{domestically}. The nationality of the producer does not matter.
+	\item GDP is usually reported at intervals of a year or a quarter of a year.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{exmp} 
+
+	For each of the following, find out how much each transaction contributes to GDP.
+	\begin{enumerate}
+		\item A metal company sells steel to a bicycle company for \$150. The bicycle company uses this steel to produce a bike, which it sells for \$250. 
+		\item Catalina owns two houses. She rents one house to the Munsters for \$15,000 per year. She lives in another house, which she could rent for \$18,000 a year.
+	\end{enumerate}
+\end{exmp}
+
+\ddp{\pause (1) \$250. Only sale of final good adds to GDP.\\
+\pause (2) \$33,000. GDP includes market value of housing services and the rental value of owner-owned housing.}
+\end{frame}
+
+\begin{frame}{GDP}
+\small
+\begin{exmp}
+		For each of the following, find out how much each transaction contributes to GDP.
+	\begin{enumerate}
+		\item The Suarez family bought a newly constructed home in 2009 for \$300,000. In 2016, they sold the house for \$345,000. How much did the sale of this home in 2016 contribute to 2009 GDP? To 2016 GDP?
+
+		\item Stella's Blender company had \$50,000 of blenders in inventory at the end of 2009. In 2010, it sold \$300,000 of blenders to consumers and had \$40,000 in inventory at the end of the year. How much did the blenders produced by the company add to GDP in 2010?
+	\end{enumerate}
+\end{exmp}
+
+\ddp{\pause (1) \$0 in both years. The sale of used goods does not contribute to GDP. The original sale of the home contributed \$300,000 to GDP in 2009. \\
+\pause (2) $\$300 + 40 - 50 = \$290$K. Reduce GDP by \$50K because inventory sold was produced in 2009. Remember we only want to include what was produced in 2010.}
+\end{frame}
+
+\section{The Expenditure Approach}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item We will decompose GDP into different types of spending. This way of analyzing GDP is called the \dd{expenditure approach}.
+	\item The other main way of looking at GDP is the \dd{factor income approach}. It consists of (1) wages and salaries, (2) interest, (3) rent, and (4) profit. 
+	\item We will not focus on this approach, but remember that regardless of which way you measure GDP, it will be (approximately) the same.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+
+\begin{enumerate}
+		\item \textbf{Consumption (C):} Spending by households on good and services. This excludes purchases of new housing!
+		\item \textbf{Investment (I):} Spending on capital equipment, inventories, and structures. Includes household purchases of new housing.
+		\item \textbf{Government purchases (G):} Spending on goods and services by local, state, and federal governments. Does not include transfer payments such as unemployment payments or welfare.
+		\item \textbf{Net Exports (NX):} Spending on domestically produced goods by foreigners (exports) minus spending on foreign goods by domestic residents (imports).
+	\end{enumerate}
+\begin{itemize}
+	\item Thus, we can write that $Y = $ \dd{$C + I + G + NX$}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{exmp}
+	
+	For each of the following examples, state what components of GDP are affected and if GDP will increase, decrease, or stay the same. 
+	
+	\begin{enumerate}
+
+		\item	A metal company sells steel to a bicycle company for \$150. The bicycle company uses this steel to produce a bike, which it sells for \$250. 
+		\item	The Suarez family buy a newly constructed home for \$300,000. 
+		\item Natalie spends \$2,000 on a new laptop to use in her publishing business. The laptop was produced in China.
+	\end{enumerate}
+\end{exmp}
+
+\ddp{\pause (1) $C$ and $Y$ increase by \$250. \\
+\pause (2) $I$ and $Y$ increase by \$300,000. \\
+\pause (3) $I$ increases by \$2,000, $NX$ decreases by \$2,000. $Y$ is unchanged.}
+\end{frame}
+
+\section{Nominal and Real GDP}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item If total spending increases from one period to another, it must be that at least one of two things occurred:
+	\begin{enumerate}
+		\item Output increased.
+		\item Prices increased.
+	\end{enumerate}
+	\item A nation's productivity is measured by its output of goods and services. Thus, we need a way to disentangle the output effect from the price effect.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item \defn{Nominal GDP:} The production of goods and services valued at \underline{current year prices}. 
+	\[Y_t^N = \sum_i P_{it} \cdot Q_{it}\]
+	\item 
+	\defn{Real GDP:} The production of goods and services valued at \underline{constant prices} from a given base year. 
+	\[Y_t^R = \sum_i P_{i,base} \cdot Q_{it}\]
+	\item \defn{Real GDP per capita:} A measure of the average income of individuals in a country: $y = Y/N$.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{GDP}
+\begin{exmp}
+	\tiny
+	Suppose a simple economy can only produce two goods: apples and bananas. The quantities produced in 2000, 2001, and 2002, as well as their prices, are shown in Table \ref{simp}.
+	
+	\begin{table}[h!]
+		\centering
+		\caption{Production in a Simple Economy}
+		\label{simp}
+		\begin{tabular}{c|c|c|c|c}       
+			
+			Year & Apples & $P_A$ & Oranges & $P_O$  \\
+			\hline
+			2000 & 1000 & \$1.50 & 2500 & \$2.00 \\
+			2001 & 1005 & \$1.51 & 2555 & \$2.10 \\
+			2002 & 1005 & \$1.52 & 2600 & \$2.45 \\
+		\end{tabular}
+	\end{table} 
+	
+	Calculate the nominal and real GDP for each year, using 2000 as the base year.
+
+\end{exmp}
+\tiny
+\ddp{\pause Nominal GDP: \\
+	\pause 2000: $1000 \times 1.50 + 2500 \times 2 = \$6,500$. \\ \pause 2001: $1005 \times 1.51 + 2555 \times 2.10 = \$6,883$. \\
+	\pause 2002: $1005 \times 1.52 + 2600 \times 2.45 = \$7,898$. \\ 
+	\pause Real GDP: \\
+	\pause 2000: $1000 \times 1.50 + 2500 \times 2 = \$6,500$. \\ \pause 2001: $1005 \times 1.50 + 2555 \times 2 = \$6,618$. \\
+	\pause 2002: $1005 \times 1.50 + 2600 \times 2 = \$6,708$.}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item \defn{GDP Deflator:} A measure of the price level in a given year. 
+	\[\text{GDP deflator$_t$} = (Y^N_t/Y^R_t) \times 100\]
+	\item Essentially, the GDP deflator measures the current level of \dd{prices} relative to the level of prices in \dd{the base year}. Thus, it reflects only the changes in the prices of good and services.
+
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item We can use the GDP deflator to calculate the \dd{inflation rate} in an economy. This rate describes how fast the overall price level in an economy is rising (or falling). 
+	\item Using the GDP deflator, the inflation rate is calculated as:
+	
+	\[\pi_{t+1} = (Deflator_{t+1} - Deflator_t)/Deflator_t \times 100\%\]
+	
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{exmp} 
+	Use Table \ref{simp} to calculate the GDP deflator for each year. What is the inflation rate from 2001 to 2002?
+\end{exmp}
+\ddp{\pause 2000: $(6500/6500)\times 100 = 100$. \\
+	\pause 2001: $(6,883/6,618)\times 100 = 104$. \\
+	\pause 2002: $(7,898/6,708)\times 100 = 118$. \\
+	\pause $\pi_{2002} = (118-104)/104\times 100\% = 13.5\%$.}
+\end{frame}
+
+\section{GDP Growth}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item Often, we are more interested on the growth of GDP instead of its level (e.g., U.S. real GPD is higher than China's but Chinese GDP is growing at a faster rate)
+	\item The growth rate of real GDP is computed as:
+	 \[\hat{Y}_{t+1} = (Y_{t+1} - Y_t)/Y_t \times 100\%\]
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+
+	\item If we are interested in the growth of the average individual's income, we'd want to find the growth rate of real GDP per capita:
+	\[\hat{y}_{t+1} = (y_{t+1} - y_t)/y_t \times 100\%\]
+	\item It turns out that since $y = Y/N$, we can write 
+	\[\hat{y} \approx \hat{Y} - \hat{N}\]
+	where $\hat{N}$ is the growth rate of the nation's population.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{GDP}
+
+	\begin{exmp} 
+		\scriptsize
+		Suppose an economy had nominal GDP of \$1,000 and \$1,025 in 2014 and 2015, respectively. Additionally, real GDP in 2015 was \$1,014 (using 2014 as the base year). 
+		\begin{enumerate}
+			\item Calculate the growth rate of nominal and real GDP between 2014 and 2015. 
+			\item The country had a population of 200 in 2014 and 210 in 2015. Calculate the growth rate of real GDP per capita.
+		\end{enumerate}
+	\end{exmp}
+	\scriptsize
+	\ddp{\pause Nominal GDP growth: (1025 - 1000)/1000 $\times 100$ = 2.5\%. \\
+		\pause Real GDP growth: (1014-1000)/1000 $\times 100$ = 1.4\%. \\
+		\pause Real GDP per capita growth: $\hat{N} = (210 - 200)/200 \times 100\% = 5\%.$ \\
+		$y = Y/N \Rightarrow \hat{y}\approx \hat{Y} - \hat{N} = 1.4 - 5 = -3.6\%$. }
+\end{frame}
+
+\begin{frame}{GDP}
+\begin{itemize}
+	\item Because economic well-being is measured by real GDP, fluctuations in real GDP measure the overall state of the economy over time.
+	\item \defn{Recession:} A period in which real GDP falls for consecutive periods (generally 2 or more).
+	\item \defn{Expansion:} A period in which real GDP rises for consecutive periods.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Readings and Assignments}
+\begin{itemize}
+	\item Today: Mankiw Ch. 23
+	\item Next time: Mankiw 24
+	\item Problem Set 4, section 2
+\end{itemize}
+\end{frame}
+
+\end{document}

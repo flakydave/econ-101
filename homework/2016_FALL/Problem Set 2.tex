@@ -1,0 +1,1000 @@
+\documentclass[addpoints,11pt]{exam}
+
+\usepackage{alltt}
+\usepackage[margin=1in]{geometry}   % set up margins
+\usepackage[T1]{fontenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumerate}              % fancy enumerate
+\usepackage{amsmath}                % used for \eqref{} in this document
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+\usepackage{verbatim}               % useful for \begin{comment} and \end{comment}
+\usepackage{eurosym}                % used for euro symbol
+\usepackage{caption} 
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{sgamevar}
+\usepackage{sgame}
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{colorlinks=true, citecolor=ForestGreen, linkcolor=BlueViolet, urlcolor=Magenta}
+
+\usepackage{array}
+\newcolumntype{H}{@{}>{\lrbox0}l<{\endlrbox}}
+
+
+%Solutions or nah (blank next two lines out for no solutions, unblank #3)
+%\printanswers
+%\newcommand{\dd}[1]{\par {\textbf{\textcolor{red}{#1}}}}
+\newcommand{\dd}[1]{}  
+
+
+\setlength\parindent{0pt}
+\unframedsolutions
+\SolutionEmphasis{\color{red}}
+\CorrectChoiceEmphasis{\color{red}}
+\renewcommand{\choicelabel}{(\alph{choice})}
+\newcommand{\blank}[0]{\underline{\hspace{3cm}}}
+\pointformat{\bfseries[\thepoints]}
+\pointpoints{pt}{pts}
+\pointsinrightmargin
+
+\begin{document}
+	
+	
+	\title{\textbf{Problem Set 2 \dd{Answers and Selected Solutions}} \\ \vspace{2 mm} {\large Principles of Economics}}
+	\author{David A. D\'iaz}
+	\date{}
+	\maketitle
+
+
+\subsection*{Elasticity}
+
+\begin{questions}
+
+	\question The ability of firms to enter and exit a market over time means that, in the long run,
+	
+	\begin{choices}
+		\choice the demand curve is more elastic.
+		\CorrectChoice the supply curve is more elastic.
+		\choice the demand curve is less elastic.
+		\choice the supply curve is less elastic.
+	\end{choices}
+
+\question If an increase in the price of a good has no impact on the total revenue in that market, demand must be
+
+\begin{choices}
+	\choice price inelastic.
+	\choice price elastic.
+	\CorrectChoice unit price elastic.
+	\choice all of the above.
+\end{choices}
+
+
+	
+	\question Suppose we are studying the market for Jello and news came out that eating Jello is detrimental to one's health.  Given this, we can say that we could, in theory, 
+	
+		\begin{choices}
+			\choice calculate both the price elasticity of demand for Jello and the price elasticity of supply. 
+			\CorrectChoice calculate the price elasticity of supply for Jello, but not the price elasticity of demand.
+			\choice calculate the price elasticity of demand for Jello, but not the price elasticity of supply.
+			\choice not calculate either the price elasticity of demand for Jello or the price elasticity of supply.
+		\end{choices}
+		
+		\begin{solution}
+			To calculate elasticity of demand or supply, we need two points along a given demand or supply curve, respectively. Here, the demand curve shifts, so we cannot calculate the elasticity of demand. However, we will have two points on a stationary supply curve so we can calculate the elasticity of supply.
+		\end{solution}
+	
+
+	\question Suppose that the price of cotton increases. In the market for oversized t-shirts, the total revenue received by sellers will \blank if the \blank.
+	
+	\begin{choices}
+		\CorrectChoice increase; demand curve is inelastic
+		\choice decrease; supply curve is inelastic
+		\choice increase; demand curve is elastic
+		\choice increase; supply curve is elastic
+	\end{choices}
+	
+		\begin{solution}
+			An increase in the price of an input will lead to a decrease in supply, which will increase the equilibrium price of oversized t-shirts. If the price increases, then TR will increase if demand is inelastic or decrease if demand is elastic.
+		\end{solution}
+		
+	
+\newpage	
+
+\question If consumers always spend 15\% of their income on food, the the income elasticity of demand for food is 
+
+\begin{choices}
+	\choice 0.15
+	\CorrectChoice 1.00	
+	\choice 1.15
+	\choice 1.50
+	\choice none of the above.
+\end{choices}
+
+\question Suppose the price of beans rises from \$10 to \$12. As a result, the quantity demanded of porridge falls by 10\%. What is the cross-price elasticity between the two goods?
+
+	\begin{choices}
+		\choice $1.818$
+		\choice $-1.818$
+		\choice $.55$
+		\CorrectChoice $-.55$
+	\end{choices}
+	
+\begin{solution}
+	$\varepsilon_{d_y}^{P_x} = \frac{\%\Delta Q_{d_y}}{\%\Delta P_x}$. We are given $\%\Delta Q_{d_y} = -10\%$. $\%\Delta P_x = \frac{P_1 - P_0}{(\frac{P_0+P1}{2})} \times 100\% = \frac{12 - 10}{(\frac{10+12}{2})} \times 100\% = 18.18\%.$ So, $\varepsilon_{d_y}^{P_x}  = -10\%\div 18.18\% = -.55$.
+\end{solution}	
+
+	\question Since chocolate chip cookies and oatmeal raisin cookies are substitutes, the cross-price elasticity of demand between the goods is 
+	
+	\begin{choices}
+		\choice negative.
+		\CorrectChoice positive.
+		\choice zero.
+		\choice impossible to discern without more information.
+	\end{choices}
+
+
+\question For which pairs of goods is the cross-price elasticity most likely to be negative?
+
+	\begin{choices}
+		\choice pens and pencils
+		\choice car tires and coffee
+		\CorrectChoice peanut butter and jelly
+		\choice new textbooks and used textbooks
+	\end{choices}
+	
+	
+	\begin{solution}
+		Cross-price elasticity is negative for goods that are complements. PB \& J are the only complements from the answer choices.
+	\end{solution}
+	
+\question If supply is price inelastic, the value of the price elasticity of supply must be 
+
+\begin{choices}
+	\choice zero.
+	\CorrectChoice less than 1.
+	\choice greater than 1.
+	\choice infinite.
+	\choice none of the above.
+\end{choices}
+	
+\question Amusement park owners increase the price of ferris wheel rides on Coney Island. Total revenue from ferris wheel rides will 
+
+\begin{choices}
+	\choice increase regardless of the elasticity of demand for ferris wheel rides.
+	\choice increase if demand for ferris wheel rides is elastic.
+	\choice decrease if demand for ferris wheel rides is inelastic.
+	\CorrectChoice increase if demand for ferris wheel rides is inelastic.
+\end{choices}
+
+\question If the absolute value of the price elasticity of demand is .5, then when the price of good $X$ rises by 20\%
+
+	\begin{choices}
+		\choice the quantity demanded of good $X$ rises by 40\%.
+		\choice the quantity demanded of good $X$ rises by 10\%.
+		\CorrectChoice the quantity demanded of good $X$ falls by 10\%.
+		\choice the quantity demanded of good $X$ falls by 40\%.
+	\end{choices}
+
+	
+	\begin{solution}
+		$|\varepsilon_d^P| = |\frac{\%\Delta Q_{d}}{\%\Delta P}| = |\frac{\%\Delta Q_{d}}{+20\%}| = .5 \Rightarrow |\%\Delta Q_{d}| = 10\%.$ By Law of Demand, if prices increased, then quantity demanded must have fallen so $\%\Delta Q_{d} = -10\%$.
+	\end{solution}
+	
+\question If demand is linear, then price elasticity of demand is 
+
+\begin{choices}
+	\choice constant along the demand curve.
+	\choice inelastic in the upper portion and elastic in the lower portion.
+	\CorrectChoice elastic in the upper portion and inelastic in the lower portion.
+	\choice elastic throughout.
+	\choice inelastic throughout.
+\end{choices}
+
+	
+	\question If the price elasticity of supply is .8, and prices increased by 5\%, then quantity supplied would
+		
+		\begin{choices}
+			\CorrectChoice increase by 4\%.
+			\choice decrease by 4\%.
+			\choice increase by 6.25\%.
+			\choice decrease by 6.25\%.
+		\end{choices}
+
+	\begin{solution}
+		$\varepsilon_s^P = \frac{\%\Delta Q_{s}}{\%\Delta P} = \frac{\%\Delta Q_{s}}{+5\%} = .8 \Rightarrow \%\Delta Q_{s} = +4\%.$
+	\end{solution}
+	
+		\question As individuals lose their jobs, they buy fewer romance novels. Which of the following might be the income elasticity of demand for romance novels?
+		
+		\begin{choices}
+			\choice $-1.32$
+			\CorrectChoice $.54$
+			\choice $-.30$
+			\choice Either (a) or (c)
+		\end{choices}
+		
+		
+\question When the price of bubble gum is \$.50, the quantity demanded is 400 packs per day. When the price falls to \$.40, quantity demanded is 600. Given this, we can say that demand for bubble gum is 
+
+\begin{choices}
+	\choice inelastic.
+	\CorrectChoice elastic.
+	\choice unit elastic.
+	\choice perfectly inelastic.
+	\choice perfectly elastic.
+\end{choices}
+	
+	\question Consider public policy aimed at smoking.
+	
+	\begin{parts}
+		\part Studies indicate the price elasticity of demand for cigarettes is about 0.4. If a pack of smokes currently costs \$2 and the government wants to reduce smoking by 20\%, by how much should it increase the price (in percentage terms)? 
+		
+		\begin{solution}
+			$\varepsilon_d^P = \frac{\%\Delta Q_d}{\%\Delta P} = -.4 \Rightarrow \frac{-20\%}{\%\Delta P} = -.4 \Rightarrow \%\Delta P = +50\%.$ The government should increase cigarette prices by 50\%. You can also use the elasticity formula to show that the new price should be \$3.33.
+		\end{solution}
+		
+		\part If the government permanently increases the price of cigarettes, will the policy have a larger effect on smoking one year from now or five years from now? Draw a graph to support your answer. 
+		
+		\begin{solution}
+			See Figure \ref{fig3}. Demand in the short run is inelastic, and thus the quantity demanded will not decrease much due to the higher price. In the long run, demand becomes more elastic and thus the quantity demanded will fall more.
+			
+			
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=.35]{hw3_plot2.pdf}
+				\caption{Demand for Cigarettes in SR and LR}
+				\label{fig3}
+			\end{figure}
+			
+		\end{solution}
+		
+		\part Studies also find that teens have a higher price elasticity of demand than do adults. Why might this be true?
+		
+		\begin{solution}
+			One of the determinants price elasticity of demand is whether a good is viewed as a luxury or a necessity. Adult smokers likely view cigarettes as more of a necessity than teens since they have been smoking for a longer amount of time and thus likely find it harder to quit. Therefore, the price elasticity of demand is likely higher for teens. Additionally, cigarettes likely consume a greater amount of the budget for teens than adults, and again this implies teens have a more elastic demand.
+		\end{solution}
+		
+	\end{parts}
+
+\end{questions}
+
+\subsection*{Price Controls and Taxes}	
+
+\begin{questions}
+	
+	
+		\question Suppose a per unit tax of \$.50 is imposed on buyers of Pepsi. As a result, the price buyers end up paying is \$1.25 for each can. Moreover, the amount Pepsi-Cola receives for every can of Pepsi sold decreases by \$.15. Given this, we can say that \blank bear most of the tax burden and the equilibrium price of Pepsi before the tax was imposed was \blank.
+		
+		\begin{choices}
+			\choice sellers; \$.75
+			\CorrectChoice buyers; \$.90
+			\choice sellers; \$.90
+			\choice buyers; \$.75
+		\end{choices}
+	
+	\begin{solution}
+		Tax = $\$.50 = P_B - P_S \Rightarrow P_S = \$1.25-\$.5 = \$.75.$ Eq. price before tax = $P_S + \$.15 = \$.90$. Sellers pay \$.15 of the tax, buyers pay \$.35.
+	\end{solution}
+		
+	
+	\question Consider Figure \ref{fig1}. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.45]{Exam1_MC19.pdf}
+		\caption{Market for Coke}
+		\label{fig1}
+	\end{figure}
+	
+	If the government imposes a \$5 per unit tax on sellers in this market,  
+	
+	\begin{choices}
+		\choice the burden of the tax will be split evenly between buyers and sellers in the market.
+		\choice the burden of the tax will be greater for sellers than for buyers in the market.
+		\CorrectChoice the burden of the tax will be greater for buyers than for sellers in the market.
+		\choice the split of the tax burden cannot be determined from this information. 
+	\end{choices}
+	
+	\begin{solution}
+		Regardless of who the tax is levied against, the majority of the tax burden will fall on whoever has the more inelastic curve. From the graph, we see that demand is more inelastic and so buyers will bear a greater burden of the tax.
+	\end{solution}
+	
+	\question A tax of \$4 is imposed by the government. Use Table \ref{MC27} to answer the question below.
+	
+	\begin{table}[H]
+		\caption{Unit Taxes}
+		\label{MC27}
+		\centering
+		\begin{tabular}{  c|c|c} 
+			
+			& Price with no tax & Price with \$4/unit tax on sellers \\
+			\hline
+			Price paid by buyers & \$55 & ? \\
+			Price received by sellers & \$55 & \$53.50  \\
+		\end{tabular}
+	\end{table}
+	
+	Because of this tax, buyers are paying \underline{\hspace{3cm}} per unit and sellers are receiving \blank per unit.
+	
+	\begin{choices}
+		\choice \$4 less; \$4 more
+		\choice \$2 more; \$2 less
+		\CorrectChoice \$2.50 more; \$1.50 less
+		\choice \$4 more; \$4 less
+	\end{choices}
+	
+	\begin{solution}
+		Sellers receive \$55 - \$53.50 = \$1.50 less per unit. $P_B = P_S + \text{tax} = \$53.50 + \$4 = \$57.50 \Rightarrow$ buyers paying \$57.50 - \$55 = \$2.50 more than before.
+	\end{solution}
+	
+\question For a price ceiling to be a binding constraint on the market, the government must set it
+
+\begin{choices}
+	\choice above the equilibrium price.
+	\CorrectChoice below the equilibrium price.
+	\choice precisely at the equilibrium price.
+	\choice at any price because all price ceilings are binding constraints.
+\end{choices}
+
+\question A binding price ceiling creates 
+
+\begin{choices}
+	\CorrectChoice a shortage.
+	\choice a surplus.
+	\choice an equilibrium.
+	\choice a shortage or surplus depending on whether the price ceiling is set above or below the equilibrium market price.
+\end{choices}
+	
+	\question The minimum wage in Los Angeles was recently increased from \$9/hour to \$15/hour. This increase in the minimum wage will cause employment to fall by 10\% if \blank and results in a(n) \blank in total wage payments.
+	
+	\begin{choices}
+		\choice labor supply is inelastic; increase
+		\CorrectChoice labor demand is inelastic; increase
+		\choice labor demand is elastic; decrease
+		\choice labor supply is elastic; decrease
+	\end{choices}
+	
+	\begin{solution}
+		An increase in the minimum wage leads to movement along the labor demand curve to determine $Q_E$. $\%\Delta W = \frac{15 - 9}{(15+9)/2} \times 100\% = 50\%. \Rightarrow |\mathcal{E}_D^W| = \frac{10\%}{50\%} = .2$ Labor demand is inelastic, so an increase in wages leads to an increase in total wage payments.
+	\end{solution}
+	
+\question Which of the following is true if the government places a price ceiling on gasoline at \$1.50 per gallon and the equilibrium price is \$1.00 per gallon.
+
+\begin{choices}
+	\choice There will be a shortage of gasoline.
+	\choice There will be a surplus of gasoline.
+	\choice A significant increase in the supply of gasoline could cause the price ceiling to become a binding constraint.
+	\CorrectChoice A significant increase in the demand for gasoline could cause the price ceiling to become a binding constraint.
+\end{choices}
+	
+\question Suppose a tax is placed on DVDs. If the sellers end up bearing most of the tax burden, we know that
+
+\begin{choices}
+	\choice demand is more inelastic than supply.
+	\CorrectChoice supply is more inelastic than demand.
+	\choice the government levied the tax on buyers.
+	\choice the government levied the tax on sellers.
+\end{choices}
+
+\newpage
+
+\question A tax placed on a good that is a necessity for consumers will likely generate a tax burden that
+
+\begin{choices}
+	\CorrectChoice falls more heavily on buyers.
+	\choice falls more heavily on sellers.
+	\choice falls entirely on sellers.
+	\choice is evenly distributed between buyers and sellers.
+\end{choices}
+
+\question Which side of the market is more likely to lobby government for a price floor?
+
+\begin{choices}
+	\choice Neither buyers or sellers desire a price floor.
+	\choice Both buyers and sellers desire a price floor.
+	\CorrectChoice The sellers.
+	\choice The buyers.
+\end{choices}
+
+\question The surplus caused by a binding price floor will be greatest if
+
+\begin{choices}
+	\CorrectChoice both supply and demand are elastic.
+	\choice supply is inelastic and demand is elastic.
+	\choice demand is inelastic and supply is elastic.
+	\choice both supply and demand are inelastic.
+\end{choices}
+	
+\question Refer to Figure \ref{MC16}, which shows the market for laptop computers.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.40]{Exam1_MC16.pdf}
+	\caption{Market for Laptops}
+	\label{MC16}
+\end{figure}
+
+If a tax of \$500 is imposed on buyers, then the share of the tax bore by consumers is
+
+\begin{choices}
+	\choice \$200.
+	\CorrectChoice \$300.
+	\choice \$500.
+	\choice \$900.
+\end{choices}
+
+\newpage
+	
+\question Which of the following statements abouve a binding price ceiling is true?
+
+\begin{choices}
+	\choice The surplus created by the price ceiling is greater in the short run than in the long run.
+	\choice The surplus created by the price ceiling is greater in the long run than in the short run.
+	\choice The shortage created by the price ceiling is greater in the short run than in the long run.
+	\CorrectChoice The shortage created by the price ceiling is greater in the long run than in the long run.
+\end{choices}
+
+
+\question A tax collected from the buyers of a good shifts the 
+
+\begin{choices}
+	\choice demand curve upward by the size of the per-unit tax.
+	\CorrectChoice demand curve downward by the size of the per-unit tax.
+	\choice supply curve upward by the size of the per-unit tax.
+	\choice supply curve downward by the size of the per-unit tax.
+\end{choices}
+
+\question Suppose the equilibrium price for apartments is \$500 per month and the government imposes rent controls of \$250. Which of the following is \textit{unlikely} to occur as a result of the rent controls.
+
+\begin{choices}
+	\choice There will be a shortage of housing.
+	\choice Landlords may discriminate among apartment renters.
+	\choice Landlords may be offered bribes to rent apartments.
+	\CorrectChoice The quality of apartments will improve.
+	\choice There may be long lines of buyers waiting for apartments.
+\end{choices}
+	
+	\question Let's return to our study of the minimum wage.
+	
+	\begin{parts}
+		
+		\part Suppose the minimum wage is above the market equilibrium wage in the market for unskilled labor. Draw a supply-and-demand diagram showing the market wage, the number of workers that are employed, and the number of workers who are unemployed. Also show the total wage payments to unskilled workers. 
+		
+		\begin{solution}
+			See Figure \ref{fig4}. 
+		\end{solution}
+		
+		\part What would be the effect of an increase in the minimum wage on employment? Does this change depend on the elasticity of demand, supply, both, or neither? Use a graph to support your answer. 
+		
+		\begin{solution}
+			An increase in the minimum wage will lead to a decrease in the quantity of workers employed ($Q_{E1} \rightarrow Q_{E2}$ in the graph). This quantity depends on the elasticity of demand, as both points are on the demand curve.
+		\end{solution}
+		
+		\part What would be the effect of an increase in the minimum wage on unemployment? Does this change depend on the elasticity of demand, supply, both, or neither? Use a graph to support your answer. 
+		
+		\begin{solution}
+			An increase in the minimum wage will lead to an increase in unemployment (unemployment 1 $\rightarrow$ unemployment 2 in the graph), as the quantity demanded decreases and quantity supplied increases. The change depends on the elasticity of both demand and supply.
+		\end{solution}
+		
+		\part Now consider the effect of an increase in the minimum wage on wage payments. What would happen to total wage payments if the demand for unskilled labor was inelastic? How does the elasticity of labor supply impact wage payments? 
+		
+		\begin{solution}
+			With inelastic labor demand, total wage payments will increase with an increase in wages, as the increase in wages offsets the decrease in the number of workers employed. The elasticity of labor supply has no effect on $Q_E$, and so has no effect on total wage payments.
+			
+			\begin{figure}[H]
+						\centering
+						\includegraphics[scale=.45]{hw3_plot3.pdf}
+						\caption{Labor Market with Minimum Wage}
+						\label{fig4}
+			\end{figure}
+					
+		\end{solution}
+		
+	\end{parts}
+	
+	
+\end{questions}
+
+\newpage
+
+\subsection*{Government Policy and Welfare}
+
+\begin{questions}
+	
+		\question In a market with a binding price ceiling, an increase in the ceiling will \blank the quantity supplied, \blank, the quantity demanded, and reduce the \blank.
+		
+		\begin{choices}
+			\choice increase; decrease; surplus
+			\choice decrease; increase; surplus
+			\CorrectChoice increase; decrease; shortage
+			\choice decrease; increase; shortage
+		\end{choices}
+		
+		\begin{solution}
+			An increase in the price ceiling will raise the market price closer to the free market equilibrium price. $Q_s$ would increase and $Q_d$ would decrease, which will reduce the shortage caused by the binding price ceiling.
+		\end{solution}
+		
+	\question A market is currently at equilibrium. A price ceiling above the equilibrium price is imposed, leading to \underline{\hspace{3cm}} in producer surplus and \underline{\hspace{3cm}} in total surplus.
+	
+	\begin{choices}
+		\choice a decrease; an increase
+		\choice an increase; an increase
+		\choice a decrease; a decrease
+		\CorrectChoice no change; no change
+	\end{choices}
+	
+		
+		
+		\question Marianne pays Natalie \$50 to mow her lawn every week. When the government levies a mowing tax of \$10 on Natalie, she raises her price to \$60. Marianne continues to hire her at the higher price. What is the change in producer surplus, consumer surplus, and deadweight loss?
+		
+		\begin{choices}
+			\choice $\$0, \$0, \$10$
+			\CorrectChoice $\$0, -\$10, \$0$
+			\choice $+\$10, -\$10, +\$10$
+			\choice $+\$10, -\$10, \$0$
+		\end{choices}
+		
+		\begin{solution}
+			With the tax, Natalie raises her price to \$60, but only receives \$50 since \$10 is going to the government. Marianne pays the new higher price of \$60 and thus bears the entire burden of the tax. For Marianne, her CS = WTP - $P_B$, and since the price she faces increased by \$10 her CS decreases by that amount. For Natalie, her PS = $P_S$ - seller cost. Since she still receives \$50, her surplus is unaffected. Finally, TS is unaffected as well because the loss in surplus to Marianne is offset by the increase in revenue the government receives from the tax.
+		\end{solution}
+
+\uplevel{Refer to Figure \ref{fig2} for questions \ref{blah1} and \ref{blah2}.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.45]{hw3_plot1.pdf}
+	\caption{Market for Surface Tablets}
+	\label{fig2}
+\end{figure}
+
+\newpage
+		
+	\question \label{blah1} If the government imposes a price floor of \$900, then consumer surplus would \blank by \blank.
+	
+	\begin{choices}
+		\choice increase; \$900
+		\CorrectChoice decrease; \$2700
+		\choice increase; \$2700
+		\choice decrease; \$900
+	\end{choices}
+	
+	\begin{solution}
+		CS before the price floor is imposed is given area between the demand curve and $P^*$ = 600 up to $Q^*$ = 12. $CS_0$ = $1/2\cdot(600)\cdot(12) = \$3,600.$ CS after the price floor is imposed is given by area between the demand curve and $P_F$ = \$900 up to new quantity $Q_F$ = 6. $CS_1$ = $1/2 \cdot (300) \cdot (6) = \$900$. CS decreased by \$2,700.
+	\end{solution}
+	
+	\question \label{blah2} As a result of this price floor, the total revenue earned by firms \blank because \blank.
+	
+	\begin{choices}
+		\question increased; supply is inelastic 
+		\question decreased; demand is inelastic
+		\question increased; demand is inelastic
+		\CorrectChoice decreased; demand is elastic
+	\end{choices}
+	
+		
+		\begin{solution}
+			$TR_0 = P^* \times Q^* = \$600 \times 12 = \$7,200$. $TR_1 = P_F \times Q_F = \$900 \times 6 = \$5,400$. TR decreased, so it must be that demand is elastic between these points.
+		\end{solution}
+		
+\question Deadweight losses due to a tax are greatest when
+
+\begin{choices}
+	\choice both supply and demand are relatively inelastic.
+	\CorrectChoice both supply and demand are relatively elastic.
+	\choice supply is elastic and demand is inelastic.
+	\choice demand is elastic and supply is inelastic.
+\end{choices}
+		
+\question Which of the following would likely cause the greatest deadweight loss?
+
+\begin{choices}
+	\choice A tax on cigarettes.
+	\choice A tax on salt.
+	\CorrectChoice A tax on cruise tickets.
+	\choice A tax on gasoline.
+\end{choices}
+
+\question Since the supply of unimproved land is relatively inelastic, a tax on unimproved land would generate a 
+
+\begin{choices}
+	\choice large deadweight loss and the burden of the tax would fall on the renter.
+	\choice small deadweight loss and the burden of the tax would fall on the renter.
+	\choice large deadweight loss and the burden of the tax would fall on the landlord.
+	\CorrectChoice small deadweight loss and the burden of the tax would fall on the landlord.
+\end{choices}
+
+\question When a tax on a good starts small and is gradually increased, tax revenue will
+
+\begin{choices}
+	\choice rise.
+	\choice fall.
+	\CorrectChoice first rise and then fall.
+	\choice first fall and then rise.
+	\choice None of the above.
+\end{choices}
+
+\newpage
+
+\question When a tax distorts incentives to buyers and sellers so that fewer goods are produced and sold, the tax has
+
+\begin{choices}
+	\choice increased efficiency. 
+	\choice decreased equity.
+	\choice generated no tax revenue.
+	\CorrectChoice caused a deadweight loss.
+\end{choices}
+
+	\question If the government wishes to impose a \$5 per unit tax on sellers, but wishes to minimize the deadweight losses resulting from the tax, it should impose the tax on a market 
+	
+	\begin{choices}
+		\choice with elastic demand and inelastic supply.
+		\choice with inelastic demand and elastic supply.
+		\CorrectChoice with inelastic demand and inelastic supply.
+		\choice with elastic demand and elastic supply.
+	\end{choices}
+	
+	\question Suppose a price ceiling of \$300 is imposed in the market shown in Figure \ref{MC42}.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.40]{Final_MC42.pdf}
+		\caption{Market for Surface Tablets}
+		\label{MC42}
+	\end{figure}
+	
+	As a result, there is a \underline{\hspace{3cm}} and deadweight losses of \underline{\hspace{3cm}}.
+	
+	\begin{choices}
+		\choice shortage of 15 units; \$7,200
+		\choice surplus of 6 units; \$7,200
+		\choice shortage of 6 units; \$3,600
+		\choice surplus of 15 units; \$3,600
+		\CorrectChoice None of the above.
+	\end{choices}
+	
+
+	
+	\question The many identical residents of Salisbury love drinking Cheerwine. Each resident has a certain willingness to pay for each can they consume as shown in Table \ref{tab3}.
+	
+	\begin{table}[H]
+		\caption{WTP for Cheerwine}
+		\label{tab3}
+		\centering
+		\begin{tabular}{ c|c} 
+			Can & WTP \\       
+			\hline
+			1st can & \$5 \\
+			2nd can & \$4 \\
+			3rd can & \$3 \\
+			4th can & \$2 \\
+			5th can & \$1 \\
+			>5 cans & \$0 \\
+		\end{tabular}
+	\end{table}
+	
+	\begin{parts}
+		\part The cost of producing Cheerwine is \$1.50. The competitive suppliers sell at this price and have a perfectly elastic supply curve. How many cans will each person consume? What is the total surplus per person in this market? 
+		
+		\begin{solution}
+			Consumers purchase Cheerwine as long as their WTP $\ge$ \$1.50 $\Rightarrow Q_D = 4$/person. PS = \$0 if supply is perfectly elastic, so TS = CS = WTP -- P for each can purchased $\Rightarrow \text{TS} = (\$5 - 1.50) + (\$4 - 1.50) + (\$3-1.50) + (\$2 - 1.50) = \$8/\text{person}$.
+		\end{solution}
+		
+		\part Producing Cheerwine creates pollution. Each can has an external cost of \$1. Taking this additional cost into account, what is the total surplus per person?
+		
+		\begin{solution}
+			Each can consumed has an external cost of \$1. If each citizen buys four cans, the total external cost/person = \$1/can $\times$ 4 cans/person = \$4/person. TS/person = \$8 - \$4 = \$4.
+		\end{solution}
+		
+		\part Mayor Woodson imposes a \$1 tax on Cheerwine. What is the consumption per person now? Calculate consumer surplus, the external cost, government revenue, and total surplus per person. 
+		
+		\begin{solution}
+			Since supply is perfectly elastic, the entire burden of the tax will be borne by consumers, so the new price consumers pay is \$1.50 + \$1 = \$2.50. Consumers will each only buy 3 cans of Cheerwine now and \\\\
+			TS/person = $\underbrace{(\$5 - 2.50) + (\$4 - 2.50) + (\$3 - 2.50)}_{\text{Consumer surplus/person}} - \underbrace{\$1 \times 3}_{\text{TEC/person}} + \underbrace{\$1 \times 3}_{\text{Tax revenue}} = \$4.50$.\\\\
+			By internalizing the externality, we got rid of the DWL and increased TS.
+		\end{solution}
+	
+	\end{parts}
+		
+\end{questions}
+
+\subsection*{Externalities}
+
+\begin{questions}
+	
+	\question David's cat causes Carlos to sneeze. David values his cat's companionship at \$400 a year. Carlos has to pay for tissues and allergy medication due to the cat that cost him \$500 a year. According to the Coase Theorem,
+	
+	\begin{choices}
+		\choice David should pay Carlos \$400 so he may keep his cat.
+		\choice David should pay Carlos \$500 for his tissues and medication.
+		\CorrectChoice Carlos should pay David \$410 to give away his cat.
+		\choice None of the above.
+	\end{choices}
+	
+	\begin{solution}
+		David is willing to pay up to \$400 to Carlos to keep his cat, or he must receive more than \$400 in order to give his cat away. Carlos is willing to pay up to \$500 to David to get rid of the cat, or he must receive at least \$500 to be okay with it. Option C is the only one that works for both parties.
+	\end{solution}
+	
+	
+	\question If the production of a good yields a positive externality, then the social benefit curve lies \blank the demand curve, and the socially optimal quantity is \blank the market equilibrium quantity.
+	
+	\begin{choices}
+		\CorrectChoice above; greater
+		\choice above; less
+		\choice below; greater
+		\choice below; less
+	\end{choices}
+	
+
+	\question The market equilibrium is not efficient when the consumption of a good creates external costs, which cause social costs to be 
+	
+	\begin{choices}
+		\choice less than the private cost.
+		\CorrectChoice greater than the private cost.
+		\choice less than the total cost.
+		\choice greater than the total cost.
+	\end{choices}
+	
+	\begin{solution} 
+		Social cost = private cost + external cost.
+	\end{solution}
+	
+\newpage
+	
+\question Which of the following statements is TRUE?
+
+\begin{choices}
+	\choice The government should tax goods with either positive or negative externalities.
+	\CorrectChoice The government should tax goods with negative externalities and subsidize goods with positive externalities.
+	\choice The government should subsidize goods with either positive or negative externalities.
+	\choice The government should tax goods with positive externalities and subsidize goods with negative externalities.
+\end{choices}
+
+\question According to the Coase Theorem, private parties can solve the problem of externalities if 
+
+\begin{choices}
+	\choice each affected party has equal power in the negotiations.
+	\choice the party affected by the externality has the initial property right to be left alone.
+	\CorrectChoice there are no transaction costs.
+	\choice the government requires them to negotiate with each other.
+	\choice there are a large number of affected parties.
+\end{choices}
+
+\question Refer to Figure \ref{MC5}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.40]{Exam_Review5.pdf}
+	\caption{A Market Externality}
+	\label{MC5}
+\end{figure}
+
+If the quantity exchanged in the market increased from the 6 units to 8 units, then the total external benefit realized would increase by \underline{\hspace{3cm}}, while deadweight losses would decrease by \blank.
+
+\begin{choices}
+	\choice \$20; \$20
+	\choice \$10; \$20
+	\choice \$10; \$10
+	\CorrectChoice \$20; \$10
+\end{choices}
+
+\newpage
+
+\question In the absence of intervention, negative externalities lead markets to produce
+
+\begin{choices}
+	\choice efficient output levels, and positive externalities lead markets to produce greater than efficient output levels.
+	\choice smaller than efficient output levels, and positive externalities lead markets to produce greater than efficient output levels.
+	\CorrectChoice greater than efficient output levels, and positive externalities lead markets to produce smaller than efficient output levels.
+	\choice greater than efficient output levels, and positive externalities lead markets to produce efficient output levels.
+\end{choices}
+
+\question In order to eliminate the deadweight losses associated with a negative market externality, the government should impose a per unit tax \blank.
+\begin{choices}
+	\choice equal to the total external cost
+	\choice less than the total external cost
+	\choice greater than the per unit external cost.
+	\CorrectChoice equal to the per unit external cost.
+	\choice None of the above.
+\end{choices}
+
+
+
+\question Negative externalities lead markets to produce
+
+\begin{choices}
+	\choice efficient output levels, and positive externalities lead markets to produce greater than efficient output levels.
+	\choice smaller than efficient output levels, and positive externalities lead markets to produce greater than efficient output levels.
+	\CorrectChoice greater than efficient output levels, and positive externalities lead markets to produce smaller than efficient output levels.
+	\choice greater than efficient output levels, and positive externalities lead markets to produce efficient output levels.
+\end{choices}
+
+\question Suppose a positive externality is present in the market for cookies. What is the relationship between the typical market equilibrium quantity and the socially optimal quantity of cookies to produced?
+
+\begin{choices}
+	\choice They are equal.
+	\choice The market equilibrium quantity is greater than the socially optimal quantity.
+	\CorrectChoice The market equilibrium quantity is less than the socially optimal quantity.
+	\choice There is not enough information to answer the question.
+\end{choices}
+
+\newpage
+
+		\question Consider Figure \ref{SA1}, which reflects the market for Surface Tablets in United States.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=.45]{Exam1_SA1.pdf}
+			\caption{Market for Surface Tablets}
+			\label{SA1}
+		\end{figure}
+		
+		\begin{parts}
+			\part What price and quantity combination represents the market price and number of units produced? 
+			\begin{solution}
+				The market will produce where supply and demand meet. $(P^*, Q^*) = P1,Q1)$.
+			\end{solution}
+			
+			\part At the market quantity, what area (or combination of areas) represents the total external cost to society?
+			\begin{solution}
+			The total external cost is given by area (D+C+G+H+I).
+			\end{solution}			 
+			
+			\part What is the social optimum quantity of Surface Tablets that should be produced?
+			\begin{solution}
+				Should produce where the demand and social cost curves meet. $Q^** = Q2$.
+			\end{solution} 
+			
+			\part At the social optimum, what area (or combination of areas) represents the total surplus realized by society? 
+			\begin{solution}
+				Total surplus at the social optimum is given by areas (A+B).
+			\end{solution}		 
+			
+			\part  A policy advisor suggests that in order to reach the social optimum point, a per-unit tax of ($P3 - P2$) should be imposed. Do you agree or disagree? Why?
+			\begin{solution}
+				Disagree. The size of the per-unit tax should be equal to the size of the per-unit externality, which is the distance ($P3 - P1$) between the social cost and supply curves.
+			\end{solution}		 		
+			
+		\end{parts}
+	
+	
+\end{questions}
+
+\subsection*{Public Goods}
+
+\begin{questions}
+	
+	\question Which of following is an example of a common resource?
+	
+	\begin{choices}
+		\choice Residential housing
+		\choice National defense 
+		\choice Restaurant meals
+		\CorrectChoice Fish in the ocean
+	\end{choices}
+	
+	\begin{solution}
+		Common resources are non-excludable and rival. Housing and meals are rival and excludable. National defense in non-excludable and non-rival.
+	\end{solution}
+
+	
+	\question A neighborhood street is considering purchasing and installing doggy clean up stations in order to keep their lawns clean. Table \ref{MC15} shows the willingness to pay of each family for each additional station.
+	
+	\begin{table}[H]
+		\caption{Willingness to Pay for Doggy Stations}
+		\label{MC15}
+		\centering
+		\begin{tabular}{ c|c|c|c} 
+			
+			Stations & Weiners Family & George Family & Heron Family\\
+			\hline
+			1st station & \$500 & \$600 & \$400\\
+			2nd station & 400 & 450 & 300\\
+			3rd station & 300 & 350 & 150\\
+			4th station & 150 & 200 & 50\\
+			5th station & 100 & 150 & 0\\
+		\end{tabular}
+	\end{table}
+	
+	If each doggy station costs \$500, how many stations should the street install in order to maximize total surplus?
+	
+	\begin{choices}
+		\choice 2 stations
+		\choice 0 stations
+		\CorrectChoice 3 stations
+		\choice 1 stations
+		\choice > 3 stations
+	\end{choices}
+
+	\begin{solution}
+		See example from class notes. Should build the station as long as the total WTP $\ge$ price/station.
+	\end{solution}
+
+		\question Public goods are 
+		
+		\begin{choices}
+			\choice efficiently provided by market forces.
+			\CorrectChoice underprovided in the absence of government.
+			\choice overused in the absence of government.
+			\choice a type of natural monopoly.
+		\end{choices}
+
+
+		
+	\question Which of the following examples demonstrates the free rider problem?
+	\begin{choices}
+		
+		\CorrectChoice Josh downloads the podcast \textit{Serial}, but never contributes to NPR, its producer.
+		\choice Liz Lemon is upset that she and Jack Donaghy pay the same amount at the toll booth, even though she only uses the road for 5 miles, while he uses it for 25 miles.
+		\choice Due to a lack of clearly defined property rights, ocean creatures tend to be overfished.
+		\choice Kristina, Jane, and Andrea rent three movies and enforce that the costs are split evenly, even though Jane is only willing to pay her share for two movies.
+	\end{choices}
+	
+	\begin{solution}
+		Free riders enjoy benefits without having to pay. In (b) Liz and Jack pay, (c) demonstrates issues with common resources, and (d) illustrates a forced rider.
+	\end{solution}
+	
+	\question An AM transmission of a baseball game is a \blank because it is \blank.
+	
+	\begin{choices}
+		\choice private good; rival and excludable
+		\choice club good; rival and non-excludable
+		\CorrectChoice public good; non-rival and non-excludable
+		\choice common resource; non-rival and excludable
+	\end{choices}
+	
+\question If one person's consumption of a good diminishes other people's use of the good, the good is said to be
+
+\begin{choices}
+	\choice a common resource.
+	\choice a good produced by a natural monopoly.
+	\CorrectChoice rival in consumption.
+	\choice excludable.
+\end{choices}
+
+\question Suppose each of 20 neighbors on a street values street repairs at \$3,000. The cost of street repair is \$40,000. Which of the following statements is true?
+
+\begin{choices}
+	\choice It is not efficient to have the street repaired.
+	\choice It is efficient for each neighbor to pay \$3,000 to repair the section of street in front of his/her home.
+	\CorrectChoice It is efficient for the government to tax the residents \$2,000 each and repair the road.
+	\choice None of the above is true.
+\end{choices}
+
+\question Public goods are difficult for a private market to provide due to 
+
+\begin{choices}
+	\choice the public goods problem.
+	\choice the rivalness problem.
+	\choice the Tragedy of the Commons.
+	\CorrectChoice the free-rider problem.
+\end{choices}
+
+\question A positive externality affects market efficiency in a manner similar to a 
+
+\begin{choices}
+	\choice private good.
+	\CorrectChoice public good.
+	\choice common resource.
+	\choice rival good.
+\end{choices}
+
+\question When markets fail to allocate resources efficiently, the ultimate source of the problem is usually
+
+\begin{choices}
+	\choice that prices are not high enough so people overconsume.
+	\choice that prices are not low enough so firms overproduce.
+	\CorrectChoice that property rights have not been well established.
+	\choice government regulation.
+\end{choices}
+
+\end{questions}
+
+\end{document}

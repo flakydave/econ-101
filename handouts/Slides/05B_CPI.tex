@@ -1,0 +1,170 @@
+\documentclass[xcolor={dvipsnames},pdf, hyperref={colorlinks=true, citecolor=ForestGreen, linkcolor=BlueViolet, urlcolor=Magenta}]{beamer}
+\usetheme{Frankfurt}  
+\usecolortheme{whale}
+\usepackage{tikz} 
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+\usepackage{verbatim}               % useful for \begin{comment} and \end{comment}
+\usepackage{eurosym}                % used for euro symbol
+\usepackage{caption} 
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\graphicspath{{Figures/}}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{sgamevar}
+\usepackage{remreset}% tiny package containing just the \@removefromreset command
+\makeatletter
+\@removefromreset{subsection}{section}
+\makeatother
+\setcounter{subsection}{1}
+
+\newcommand{\defn}[1]{\textbf{#1}}
+
+
+%Instructor version
+\newcommand{\blank}[0]{}
+\newcommand{\ddp}[1]{{\textcolor{ForestGreen}{#1}}} 
+\newcommand{\dd}[1]{{\underline{\textcolor{ForestGreen}{#1}}}}
+
+%Student version
+%\newcommand{\blank}[0]{\vspace{2em}}
+%\newcommand{\dd}[1]{\underline{\hspace{3cm}}} 
+%\newcommand{\ddp}[1]{}
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\section{The Consumer Price Index}
+
+%% preamble
+\title{The Cost of Living}
+\author{David A. D\'iaz}
+\institute{UNC Chapel Hill}
+\date{}
+
+\AtBeginSection[] %Section links on slides
+
+\begin{document} 
+	
+	\begin{frame}
+		
+		\titlepage
+		
+	\end{frame}
+
+
+\begin{frame}{CPI}
+\begin{itemize}
+	\item GDP measures the quantity of goods and services that an economy produces. \item This section looks at the overall \textit{cost of living}. How far does a dollar get you in terms of purchasing power?
+	\item \defn{CPI:} A measure of the overall price level measured by the cost of goods and services bought by a typical consumer (e.g., housing, gasoline, food, etc.)
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Calculating the CPI}
+
+\subsubsection*{Calculating the CPI}
+
+\begin{enumerate}
+	\item Fix the basket 
+	\item Find the prices at each point in time
+	\item Compute the basket's cost: $P_t = \sum_i p_{it} \times q_{i}$, where $i$ represents each good in the index. The quantity refers to the number of each good contained in the basket. Remember that it stays fixed!
+	\item Choose a base year and compute the index
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Calculating the CPI}
+\begin{itemize}
+	\item The CPI in year $t$ is computed as 
+	\[CPI_t = P_t/P_{base yr} \times 100\]
+	\item \defn{Inflation Rate:} The percentage change in the price index from the preceding period.
+	\item Just like with the GDP deflator, we can use the CPI to find the inflation rate:
+	\[\pi_{t+1} = (CPI_{t+1} - CPI_t)/CPI_t \times 100\%\]
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Calculating the CPI}
+
+\tiny
+\begin{exmp} Table \ref{cpi} shows the prices of textbooks and movie tickets in an economy. Suppose that a basket contains 20 movie tickets and 10 textbooks. 2014 is the base year.
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Production in a Simple Economy}
+		\label{cpi}
+		\begin{tabular}{ c|c|c}       
+			
+			Year & Movie Tickets & Textbooks  \\
+			\hline
+			2013 & \$10.00 & \$120.00 \\
+			2014 & \$11.50 & \$130.00 \\
+			2015 & \$12.00 & \$135.00 \\
+		\end{tabular}
+	\end{table} 
+	How much did the basket cost in 2015? What was the CPI in each year? What is the inflation rate in 2014?
+\end{exmp}
+\scriptsize
+\ddp{\pause $P_{2013} = 10 \times 20 + 120 \times 10 = \$1,400$. \\ $P_{2014} = 11.50 \times 20 + 130 \times 10 = \$1,530$ \\
+	$P_{2015} = 12 \times 20 + 135 \times 10 = \$1,590$. \\
+\pause	$CPI_{2013} = 1400/1530 \times 100 = 91.5$. \\ $CPI_{2014} = 1530/1530 \times 100 = 100$. \\ $CPI_{2015} = 1590/1530 \times 100 = 103.9$. \\
+\pause $\pi_{2014} = (100-91.5)/91.5\times 100\% = 9.3\%.$}
+\end{frame}
+
+
+\begin{frame}{Issues with the CPI}
+\begin{enumerate}
+	\item Substitution bias: Buyers move towards goods that become relatively less expensive. Basket remains constant, so it ignores substitution towards these goods and overstates increases in the cost of living.
+	\item New goods: As new goods are introduced, consumers have more choices and each dollar is worth more. Fixed baskets ignore this increase in value.
+	\item Quality change: Hard to measure changes in quality.
+\end{enumerate}
+\end{frame}
+
+\section{The Effects of Inflation}
+
+\begin{frame}{Correcting for Inflation}
+\begin{itemize}
+	\item Due to inflation, a dollar in one year is not the same as a dollar the next. In order to compare the purchasing power of money between two different years, we need to perform a unit conversion. 
+	\item Since the CPI gives a measure of the price level each year, we can use a ratio of the CPI to convert from year $X$ dollars to year $Y$ dollars as such:
+	\[\text{Amount in yr. $Y$ dollars = Amount in yr. $X$ dollar} \times (CPI_Y/CPI_X)\]
+	\item \defn{Indexation:} The automatic correction by law or contract of a dollar amount for the effects of inflation.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Correcting for Inflation}
+\begin{exmp} The average price of gas in 1981 was \$1.42 a gallon. Meanwhile, the average price of gas in 2005 was \$2.50. If the CPI in 1981 was 88.5 and the CPI in 2005 was 196.4, was gas more expensive in 1981 or 2005 after correcting for inflation? 
+\end{exmp}
+\ddp{\pause 1981 gas price in 2005 dollars = 1.42 $\times$ (196.4/88.5) = \$3.15/gallon. \\ Gas was more expensive in 1981.}
+\end{frame}
+
+\begin{frame}{Correcting for Inflation}
+\begin{exmp}
+	The CPI in 1980 was 90, while in 2000 it was 200. If economics majors on average made \$24,000 in 1980 and \$55,000 in 2000, are they better off today or in 1980?
+\end{exmp}
+
+\ddp{\pause 1980 salary in 2000 dollars = 24,000 $\times$ (200/90) = \$53,333. Better off today.}
+\end{frame}
+
+
+\begin{frame}{Readings and Assignments}
+\begin{itemize}
+	\item Today: Mankiw Ch. 24
+	\item Next time: Mankiw 25
+	\item Problem Set 4, section 3
+\end{itemize}
+\end{frame}
+
+\end{document}
